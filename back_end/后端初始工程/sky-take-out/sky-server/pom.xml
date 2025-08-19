@@ -43,8 +43,10 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <version>8.0.33</version> <!-- 支持 JDK17 -->
         </dependency>
+
+
 
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
