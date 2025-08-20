@@ -29,8 +29,8 @@ public interface EmployeeService {
 
     /**
      * 根据id查询员工
+     * @param status
      * @param id
-     * @return
      */
-    void startOrStop(Long id, Integer status);
+    void startOrStop(Integer status,Long id);
 }

@@ -93,24 +93,17 @@ public class EmployeeController {
     }
 
 
-    @PutMapping("/status/{status}")
-    @ApiOperation("根据id查询员工")
-    public Result startOrStop(Long id, @PathVariable Integer status) {
-        log.info("根据id查询员工，参数为id={},status={}", id, status);
-        employeeService.startOrStop(id, status);
-        return Result.success();
-    }
     /**
-     * 启用禁用员工
+     * 启用禁用员工账号
      * @param status
      * @param id
      * @return
      */
-    @PutMapping("/status/{status}")
-    @ApiOperation("启用禁用员工")
-    public Result starOrStop(@PathVariable("status") Integer status,long id) {
+    @PostMapping("/status/{status}")
+    @ApiOperation("启用禁用员工账号")
+    public Result starOrStop(@PathVariable("status") Integer status,Long id) {
         log.info("启用禁用员工，参数为id={},status={}", id, status);
-        employeeService.startOrStop(id, status);
+        employeeService.startOrStop(status, id);
         return Result.success();
     }
 

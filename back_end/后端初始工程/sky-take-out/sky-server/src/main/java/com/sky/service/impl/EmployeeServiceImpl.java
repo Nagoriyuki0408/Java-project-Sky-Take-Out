@@ -119,17 +119,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     /**
      * 启用禁用员工账号
-     * @param id
      * @param status
+     * @param id
      */
-    public void startOrStop(Long id, Integer status) {
+    public void startOrStop(Integer status,Long id) {
         //update employee set status = #{status} where id = #{id}
 //        Employee employee = new Employee();
 //        employee.setId(id);
 //        employee.setStatus(status);
         Employee employee = Employee.builder()
-                .id(id)
                 .status(status)
+                .id(id)
                 .build();
         employeeMapper.update(employee);
     }

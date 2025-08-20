@@ -272,3 +272,5 @@
 127.0.0.1 - - [19/Aug/2025:15:44:44 +0800] "GET /api/employee/page?page=1&pageSize=10&name=shiokou HTTP/1.1" 200 64 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
 127.0.0.1 - - [19/Aug/2025:15:44:47 +0800] "GET /api/employee/page?page=1&pageSize=10&name=yushio HTTP/1.1" 200 329 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
 127.0.0.1 - - [19/Aug/2025:15:46:48 +0800] "POST /api/employee/status/0?id=2 HTTP/1.1" 405 114 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
+192.168.137.231 - - [20/Aug/2025:01:35:34 +0800] "GET / HTTP/1.1" 200 2012 "-" "Dalvik/2.1.0 (Linux; U; Android 12; HD1900 Build/SKQ1.211113.001)"
+192.168.137.231 - - [20/Aug/2025:01:44:53 +0800] "GET / HTTP/1.1" 200 2012 "-" "Dalvik/2.1.0 (Linux; U; Android 12; HD1900 Build/SKQ1.211113.001)"
